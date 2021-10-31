@@ -2,29 +2,13 @@
 using namespace std;  
 int main(){
 	int a;
-	char b;
+	cin>>a;
 	do{
-		cout<<"Enter Any Number:"<<endl;
-		cin>>a;
-		if(a>-100 && a<100 && a!=0) {
-		if(a%2==0){
-			cout<<"Even"<<endl;
-		}else{
-			cout<<"Odd"<<endl;
-		}
-	}else if(a==0){
-		cout<<"Neither Odd nor even"<<endl;
-	}else{
-		cout<<"Out of Range Value"<<endl;
-	}
-		cout<<"Continue ? (y/n) :"<<endl;
-		cin>>b;
-		if(b!= 'y' && b!= 'n'){
-			cout<<"Invalid Choice"<<endl;
-			return 0;
-		}
-	}while(b!='n');
-	cout<<"\nExited!!!";
+	  if(i%2==0){
+	    cout<<a;
+	  }
+		i--
+	}while(i>0)
 	return 0;
 }
 
