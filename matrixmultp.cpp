@@ -20,7 +20,7 @@ int main(){
 	else
 	{
 	
-	int mat1[row1][col1],mat2[row2][col2],result[row1][col2];
+	int mat1[row1][col1],mat2[row2][col2],result[row1][col2],result2[row1][col2];
 	cout<<"Enter Matrix 1 :"<<endl;
 	for(int i=0;i<row1;i++){
 		for(int j=0;j<col1;j++){
@@ -45,6 +45,20 @@ int main(){
 	for(int i=0;i<row1;i++){
 		for(int j=0;j<col2;j++){    
 			cout<<result[i][j]<<" ";    
+			}    
+		cout<<"\n";   
+	cout<<"Addition:"<<endl;
+	for(int i=0;i<row1;i++){
+		for(int j=0;j<col2;j++){
+			result[i][j]=0;
+			for(int k=0;k<col2;k++){
+				result[i][j]+=mat1[i][k]+mat2[k][j];    
+				}
+			}
+		}
+	for(int i=0;i<row1;i++){
+		for(int j=0;j<col2;j++){    
+			cout<<result2[i][j]<<" ";    
 			}    
 		cout<<"\n";   
 	}
